@@ -10,6 +10,9 @@ public class PassAuthTest {
         WebDriver driver = StartWebDriver.startDriver();
         WebDriverWait wait = new WebDriverWait(driver, 10);
         AuthSteps authSteps = new AuthSteps();
+
         authSteps.authPass(wait, driver);
+
+        driver.quit();
     }
 }
