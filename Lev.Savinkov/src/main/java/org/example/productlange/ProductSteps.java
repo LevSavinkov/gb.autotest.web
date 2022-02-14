@@ -17,12 +17,9 @@ public class ProductSteps {
 
     public void goToCategory(WebDriverWait wait,WebDriver driver, Actions actions) {
 
-
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@class='catalog-menu__i ']/a[@href='/category/gitary']")));
         WebElement guitars = driver.findElement(By.xpath("//div[@class='catalog-menu__i ']/a[@href='/category/gitary']"));
         actions.moveToElement(guitars).build().perform();
-
-
 
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='catalog-menu__category']/a[@href='/category/elektrogitary']")));
         WebElement electroGuitars = driver.findElement(By.xpath("//div[@class='catalog-menu__category']/a[@href='/category/elektrogitary']"));
