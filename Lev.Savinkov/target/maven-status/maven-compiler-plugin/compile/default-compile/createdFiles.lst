@@ -1,2 +1,6 @@
-org\example\auth\negative.class
-org\example\auth\pass.class
+org\example\ProductPage.class
+org\example\AbstractPage.class
+org\example\MainPage.class
+org\example\MainProductMenu.class
+org\example\AuthPage.class
+org\example\ProductListPage.class
